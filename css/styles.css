@@ -143,14 +143,15 @@ body {
 
 /* */
 
-.card .img-about {
-	background-image: url('../img/foto.jpg');
-	background-repeat: no-repeat;
-	background-size: 30%;
-	background-position-x: right;
-	background-position-y: bottom;
+@media min-width(800px) {
+	.card .img-about {
+		background-image: url('../img/foto.jpg');
+		background-repeat: no-repeat;
+		background-size: 30%;
+		background-position-x: right;
+		background-position-y: bottom;
+	}
 }
-
 
 /* Cursor */
 
