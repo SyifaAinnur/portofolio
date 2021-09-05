@@ -221,3 +221,11 @@ body {
 	animation-duration: 0.5s;
 }
 
+.text-p {
+	width: 60%;
+}
+@media (max-width: 800px) {
+	.text-p {
+		width: 90%;
+	}
+}
