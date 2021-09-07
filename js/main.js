@@ -1,8 +1,4 @@
-/*
-Name : Main.JS Portofolio
-Author : Fikri Maulana
-Date : 7 April 2021
-*/
+
 
 
 var domain = "https://syifaainnur.github.io/portofolio/";
@@ -60,7 +56,7 @@ $('a.skill').bind('click', function(event) {
 $('a.contact').bind('click', function(event) {
     $.ajax({
         type: 'GET',
-        url: domain + "contact.html",
+        url: domain + "portofolio.html",
         cache: false,
         processData: false,
         contentType: false,
