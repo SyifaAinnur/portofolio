@@ -223,7 +223,7 @@ body {
   margin-top: 10px;
 }
 
-#btn {
+#buton {
   align-self: center;
   border: 2px solid #666;
   padding: 10px 15px;
@@ -233,6 +233,6 @@ body {
   cursor: pointer;
 }
 
-#btn:focus {
+#buton:focus {
   outline: none;
 }

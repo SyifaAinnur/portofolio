@@ -2,7 +2,7 @@ const api = "https://api.quotable.io/random";
 
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
-const btn = document.getElementById("btn");
+const btn = document.getElementById("buton");
 
 btn.addEventListener("click", getQuote);
 
