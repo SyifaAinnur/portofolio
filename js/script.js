@@ -18,6 +18,6 @@ const getQuote = async () => {
     button.href = `https://twitter.com/intent/tweet?text=${quote} - ${author}`
 }
 
-// nextBtn.addEventListener('click', getQuote);
+nextBtn.addEventListener('click', getQuote);
 
 getQuote();
