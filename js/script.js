@@ -6,6 +6,7 @@ const loader = document.querySelector(".loader");
 
 if (nextBtn) {
   nextBtn.addEventListener("click", getQuote);
+  getQuote();
   
   const getQuote = async () => {
     loader.classList.remove("hide");
@@ -21,4 +22,3 @@ if (nextBtn) {
     button.href = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
   };
 }
-getQuote();
