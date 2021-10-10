@@ -210,3 +210,29 @@ body {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
+
+#quote {
+  color: #444;
+  text-align: center;
+}
+#author {
+  float: right;
+  color: #888;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#btn {
+  align-self: center;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:focus {
+  outline: none;
+}
