@@ -17,9 +17,6 @@ const getNewQuote = async () =>
     {
         author = "Anonymous";
     }
-    text.innerHTML=quote;
-    author.innerHTML="~ "+auth;
-
     //tweet the quote
     tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
 }
