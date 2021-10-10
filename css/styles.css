@@ -1,7 +1,10 @@
 body {
   font-family: "IBM Plex Mono", monospace;
 }
-
+:root {
+  --primary-color: #364ba7;
+  --secondary-color: #f583a7;
+}
 /* content */
 
 .custom-content {
