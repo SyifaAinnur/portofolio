@@ -1,24 +1,26 @@
-const text = document.querySelector(".quote");
-const auth = document.querySelector(".author");
-const button = document.querySelector(".twitter-share-button");
-const nextBtn = document.querySelector(".next");
-const loader = document.querySelector(".loader");
+const text=document.getElementById("quote");
+const author=document.getElementById("author");
+const tweetButton=document.getElementById("tweet");
 
-if (nextBtn) {
-  nextBtn.addEventListener("click", getQuote);
-  getQuote();
-  
-  const getQuote = async () => {
-    loader.classList.remove("hide");
-    const res = await fetch(`https://type.fit/api/quotes`);
-    const quotes = await res.json();
-    loader.classList.add("hide");
-    const num = Math.floor(Math.random() * quotes.length);
-    const item = quotes[num];
-    const quote = item.text;
-    const author = item.author;
-    text.innerText = quote;
-    auth.innerText = author;
-    button.href = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
-  };
+const getNewQuote = async () =>
+{
+    var url="https://type.fit/api/quotes";    
+
+    const response=await fetch(url);
+    console.log(typeof response);
+    const allQuotes = await response.json();
+    const indx = Math.floor(Math.random()*allQuotes.length);
+    const quote=allQuotes[indx].text;
+    const auth=allQuotes[indx].author;
+
+    if(auth==null)
+    {
+        author = "Anonymous";
+    }
+    text.innerHTML=quote;
+    author.innerHTML="~ "+auth;
+
+    //tweet the quote
+    tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
 }
+getNewQuote();
