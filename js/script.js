@@ -18,6 +18,5 @@ const getNewQuote = async () =>
         author = "Anonymous";
     }
     //tweet the quote
-    tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
 }
 getNewQuote();
