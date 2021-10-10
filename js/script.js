@@ -5,13 +5,12 @@ const author = document.getElementById("author");
 const btn = document.getElementById("buton");
 if (btn) {
   btn.addEventListener("click", getQuote);
-
-  function getQuote() {
-    fetch(api)
-      .then((res) => res.json())
-      .then((data) => {
-        quote.innerHTML = `"${data.content}"`;
-        author.innerHTML = `- ${data.author}`;
-      });
-  }
+}
+function getQuote() {
+  fetch(api)
+    .then((res) => res.json())
+    .then((data) => {
+      quote.innerHTML = `"${data.content}"`;
+      author.innerHTML = `- ${data.author}`;
+    });
 }
