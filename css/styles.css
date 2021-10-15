@@ -210,5 +210,8 @@ body {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
+.text-p{
+  font-size: 15px;
+}
 
 
