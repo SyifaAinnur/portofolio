@@ -213,5 +213,12 @@ body {
 .text-p{
   font-size: 15px;
 }
+@media (min-width:850px) {
+  .text-p{
+    font-size: 15px;
+    margin-right: 177px;
+  }
+  
+}
 
 
