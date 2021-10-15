@@ -65,16 +65,4 @@ $('a.contact').bind('click', function(event) {
         }
     });
 });
-$('a.contact').bind('click', function(event) {
-    $.ajax({
-        type: 'GET',
-        url: domain + "qoute.html",
-        cache: false,
-        processData: false,
-        contentType: false,
-        success: function(result) {
-            $("#content").html(result);
-        }
-    });
-});
 
